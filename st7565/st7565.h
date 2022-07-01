@@ -1,3 +1,7 @@
+#ifndef __ST7565P_H_
+#define __ST7565P_H_
+
+
 #include "stdio.h"
 #include "stm32g0xx_ll_gpio.h"
 
@@ -59,3 +63,5 @@ void st7565_set_brightness(st7565_lcd_dev_t* lcd, uint8_t val);
 void st7565_set_pixel(st7565_lcd_dev_t* lcd, uint8_t x_pos, uint8_t y_pos,uint8_t color);
 void st7565_refresh(st7565_lcd_dev_t* lcd);
 void st7565_set_brightness(st7565_lcd_dev_t* lcd, uint8_t val);
+
+#endif
